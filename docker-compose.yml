@@ -1,0 +1,15 @@
+version: '2'
+services:
+  craft-leaderboard-1-container:
+    image: craft-leaderboard-1-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/craft-leaderboard-1-container
+    ports:
+     - "8080:8080"
+    
+  
+
+
